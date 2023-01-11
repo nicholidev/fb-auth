@@ -1,1 +1,1 @@
-# Firebase Auth Simply
+# Firebase Auth Simple
