@@ -1,18 +1,18 @@
 {
-  "name": "fb-auth",
+  "name": "firebase-authentication",
   "version": "1.0.0",
-  "description": "",
+  "description": "Firebase Authentication in firebase applications",
   "main": "index.js",
   "scripts": {
     "test": "jest --config jestconfig.json",
     "build": "tsc",
     "format": "prettier --write \"src/**/*.ts\"",
     "lint": "tslint -p tsconfig.json",
-    "prepare" : "npm run build",
-    "prepublishOnly" : "npm test && npm run lint",
-    "preversion" : "npm run lint",
-    "version" : "npm run format && git add -A src",
-    "postversion" : "git push && git push --tags"
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test && npm run lint",
+    "preversion": "npm run lint",
+    "version": "npm run format && git add -A src",
+    "postversion": "git push && git push --tags"
   },
   "repository": {
     "type": "git",
@@ -21,6 +21,7 @@
   "keywords": [
     "firebase",
     "firebase-auth",
+    "react",
     "authentication"
   ],
   "author": "nicholijin",
@@ -32,8 +33,14 @@
     "url": "https://github.com/nicholidev/fb-auth/issues"
   },
   "homepage": "https://github.com/nicholidev/fb-auth#readme",
+  "dependencies": {
+    "effector": "^22.5.0",
+    "firebase": "^9.15.0",
+    "react": "^18.2.0"
+  },
   "devDependencies": {
     "@types/jest": "^29.2.5",
+    "@types/react": "^18.0.26",
     "jest": "^29.3.1",
     "prettier": "^2.8.2",
     "ts-jest": "^29.0.3",
